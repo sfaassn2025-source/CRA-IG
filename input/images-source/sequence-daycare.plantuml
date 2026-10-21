@@ -1,0 +1,13 @@
+@startuml
+skinparam shadowing false
+skinparam defaultFontName "Microsoft JhengHei"
+participant "未滿兩歲兒童\n育兒津貼資訊系統" as Baby #DDEBF7
+participant "托育服務\n資訊整合系統" as Daycare #E2F0D9
+
+Baby -> Daycare : 1 傳送每日正在領取育兒津貼的資格資料
+alt 傳送成功
+  Daycare --> Baby : 2 取得傳送成功訊息
+else 傳送失敗
+  Daycare --> Baby : 3 取得傳送失敗訊息
+end
+@enduml

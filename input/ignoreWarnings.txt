@@ -1,0 +1,25 @@
+== Suppressed Messages ==
+
+# deprecated extension，IG中未使用，不影響驗證。（後方的藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
+% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated%
+
+# 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
+% The discriminator type 'pattern' is deprecated in R5%
+
+# 提醒slice雖有多筆，但實際只能填一筆，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
+The slice definition for Patient.identifier has a maximum of 2 but the slices add up to a maximum of 4. Check that this is what is intended
+
+# 使用預設的 HL7 代碼系統，但 HL7 validator 無法辨識代碼系統，此屬於HL7 validator 程式本身問題，非IG 設計問題，此提示訊息不影響實作與實際代碼驗證。（INFORMATION後方的藍色字樣(1 uses) 是指INFORMATION在此Profile中有被使用到）
+% There are multiple different potential matches for the url%
+
+# validated無法辨識URL，不影響驗證。（WARNING後方的 藍色字樣(1uses) 是指WARNING在此Profile中有被使用到）
+% Canonical URL%
+% URL value%
+
+# 最新版本的代碼不齊全，無法直接繼承，故先繼續使用0.3.2版
+% The ImplementationGuide uses package tw.gov.mohw.twcore#0.3.2%
+
+# 建議使用OID，但目前暫無需求，不影響驗證
+% have an OID%
+

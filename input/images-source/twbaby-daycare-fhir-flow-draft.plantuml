@@ -1,0 +1,19 @@
+@startuml
+title 育兒津貼 -> 托育：補助資格互斥比對（FHIR 設計草稿）
+hide footbox
+participant "育兒津貼系統" as Baby
+participant "育兒津貼 FHIR Server" as BabyServer
+participant "托育系統" as Daycare
+
+Baby -> BabyServer: 維護 Claim 與 ClaimResponse
+note right of BabyServer
+Claim.identifier：申請案號
+Claim.created：申請日期
+ClaimResponse.created：審核／查核日期
+ClaimResponse：補助結果、金額與有效期間
+end note
+Daycare -> BabyServer: 查詢／取得有效育兒津貼資格
+BabyServer --> Daycare: Bundle / FHIR API\nPatient + RelatedPerson* + Claim + ClaimResponse
+Daycare -> Daycare: 依有效補助期間與互斥規則比對
+Daycare --> BabyServer: 技術接收結果
+@enduml
