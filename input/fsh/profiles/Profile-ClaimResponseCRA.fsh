@@ -6,6 +6,10 @@ Description: "此 Profile 繼承補助審核或核付結果-ClaimResponse TWSS B
 
 * patient only Reference(PatientCRA)
 * request only Reference(ClaimCRA)
+* use = #claim
+* use ^short = "申請用途；固定為正式補助申請。"
+* type = https://sfaa.gov.tw/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
+* type ^short = "補助申請類型；固定為社會福利補助申請，對應原申請的 Claim.type。"
 * insurance.coverage only Reference(CoverageCRA)
 * insurer 1..1
 * insurer only Reference(OrganizationTWSSBase)
@@ -16,6 +20,9 @@ Description: "此 Profile 繼承補助審核或核付結果-ClaimResponse TWSS B
 * extension[subsidyPeriod] ^short = "補助期間"
 * extension[subsidyPeriod].extension[start].valueDate ^short = "補助起始年月"
 * extension[subsidyPeriod].extension[end].valueDate ^short = "補助結束年月"
+* extension contains CRABenefitSuspensionStart named benefitSuspensionStart 0..1 MS
+* extension[benefitSuspensionStart] ^short = "核停年月"
+* extension[benefitSuspensionStart] ^definition = "自該年月起停止領取育兒津貼的核停年月；不等同於補助期間的結束日期。"
 * item 1..1 MS
 * item.adjudication[approvedBenefit] 1..1 MS
 * item.adjudication[approvedBenefit].reason = TWSSSubsidyApprovalDecision#approved

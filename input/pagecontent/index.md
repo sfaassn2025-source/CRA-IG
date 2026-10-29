@@ -71,6 +71,7 @@
 	<li><strong><a href="examples.html">範例</a></strong>：本IG所定義Profiles之範例檔。</li>
 	<li><strong><a href="downloads.html">定義與範例檔下載</a></strong>：實作者若不偏好使用FHIR RESTful API驗證資料是否符合Profiles，可直接下載所需的格式驗證檔，包括XML、JSON及Turtle三種格式，亦可於此下載完整範例檔。</li>
 	<li><strong><a href="security.html">安全性</a></strong>：主要說明採用本IG網站進行實作時，有關資料存取授權的作法。</li>
+	<li><strong><a href="history.html">版本異動</a></strong>：若本IG網站的版本有所異動，皆可透過<a href="history.html">異動說明頁</a>瞭解版本間的異動差異。</li>
 </ul>
 </div>
 

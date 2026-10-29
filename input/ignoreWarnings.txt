@@ -1,8 +1,8 @@
 == Suppressed Messages ==
 
 # deprecated extension，IG中未使用，不影響驗證。（後方的藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
-% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated%
-% The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated%
+% The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.0 is deprecated%
 
 # 提醒slice的pattern寫法將於R5版本不再支援，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 % The discriminator type 'pattern' is deprecated in R5%
@@ -22,4 +22,7 @@ The slice definition for Patient.identifier has a maximum of 2 but the slices ad
 
 # 建議使用OID，但目前暫無需求，不影響驗證
 % have an OID%
+
+# history.html 為目前草稿版版本異動頁；正式發布流程會取代此頁面。
+% This IG generates a page named 'history.html'. That file name is reserved by the publication process%
 
