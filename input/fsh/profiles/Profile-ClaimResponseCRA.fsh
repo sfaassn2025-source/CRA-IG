@@ -20,9 +20,9 @@ Description: "此 Profile 繼承補助審核或核付結果-ClaimResponse TWSS B
 * extension[subsidyPeriod] ^short = "補助期間"
 * extension[subsidyPeriod].extension[start].valueDate ^short = "補助起始年月"
 * extension[subsidyPeriod].extension[end].valueDate ^short = "補助結束年月"
-* extension contains CRABenefitSuspensionStart named benefitSuspensionStart 0..1 MS
-* extension[benefitSuspensionStart] ^short = "核停年月"
-* extension[benefitSuspensionStart] ^definition = "自該年月起停止領取育兒津貼的核停年月；不等同於補助期間的結束日期。"
+* extension contains CRASuspensionApprovalYearMonth named suspensionApprovalYearMonth 0..1 MS
+* extension[suspensionApprovalYearMonth] ^short = "核停年月"
+* extension[suspensionApprovalYearMonth] ^definition = "自該年月起停止領取育兒津貼的核停年月；不等同於補助期間的結束日期。"
 * item 1..1 MS
 * item.adjudication[approvedBenefit] 1..1 MS
 * item.adjudication[approvedBenefit].reason = TWSSSubsidyApprovalDecision#approved

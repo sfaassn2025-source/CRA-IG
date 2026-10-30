@@ -226,7 +226,7 @@ Usage: #example
 * disposition = "核定通過"
 * extension[subsidyPeriod].extension[start].valueDate = "2026-11"
 * extension[subsidyPeriod].extension[end].valueDate = "2027-01"
-* extension[benefitSuspensionStart].valueDate = "2027-02"
+* extension[suspensionApprovalYearMonth].valueDate = "2027-02"
 * item[0].itemSequence = 1
 * item[0].adjudication[approvedBenefit].category = http://terminology.hl7.org/CodeSystem/adjudication#benefit "Benefit Amount"
 * item[0].adjudication[approvedBenefit].reason = TWSSSubsidyApprovalDecision#approved "通過"

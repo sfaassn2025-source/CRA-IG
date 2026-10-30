@@ -23,7 +23,7 @@
 - [育兒津貼關係人-RelatedPerson CRA](StructureDefinition-RelatedPerson-cra.html)
 
 ### Extensions
-- [核停年月](StructureDefinition-cra-benefit-suspension-start.html)
+- [核停年月](StructureDefinition-cra-suspension-approval-year-month.html)
 
 ### TWSS Base IG Extension
 - [補助期間](https://build.fhir.org/ig/sfaassn2025-source/base/StructureDefinition-twss-claim-subsidy-period.html)

@@ -20,7 +20,7 @@
 <p>本專案型 IG 涵蓋未滿兩歲兒童育兒津貼資訊系統每日提供正在領取育兒津貼之資格資料予托育服務整合資訊系統的交換情境。托育服務整合資訊系統取得資料後，比對幼兒身分識別碼與育兒津貼資格資料，以執行補助資格互斥判斷。</p>
 <p>每日交換資料以 <code>Bundle.type = collection</code> 封裝；每筆資料集合包含受補助兒童、必要關係人、育兒津貼申請、補助資格及核定結果。補助審查與核定流程沿用 TWSS Base IG 的 Claim、Coverage 與 ClaimResponse 設計，本 IG 僅針對育兒津貼與托育資格比對情境進一步收斂。</p>
 
-<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-daycare.png" alt="未滿兩歲育兒津貼資格交換使用情境圖" /></div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="usecase-daycare.png" alt="未滿兩歲育兒津貼資格交換使用情境圖" style="width: 70%; max-width: 760px; height: auto;" /></div>
 <div style="clear:both;"></div>
 </div>
 
@@ -31,7 +31,7 @@
   <li>托育服務整合資訊系統以 Bundle 建立交易的 HTTP 回應表達傳送成功或失敗；本 IG 目前未定義額外的業務回覆 Resource。</li>
 </ol>
 
-<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-daycare.png" alt="未滿兩歲育兒津貼資格交換循序圖" /></div>
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-daycare.png" alt="未滿兩歲育兒津貼資格交換循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
 <div style="clear:both;"></div>
 </div>
 
