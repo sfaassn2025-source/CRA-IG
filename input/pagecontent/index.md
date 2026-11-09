@@ -35,6 +35,32 @@
 <div style="clear:both;"></div>
 </div>
 
+#### 系統間 FHIR 資料交換方向
+<div style="padding-left: 10px;">
+<p>以下說明各系統間使用 FHIR 進行資料交換的方向。</p>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>育兒津貼資格查詢</strong></div>
+  <div class="panel-body">
+    <div class="row" style="display: flex; align-items: center;">
+      <div class="col-sm-5 text-center">
+        <strong>托育服務整合資訊系統</strong><br/>
+        <span class="label label-info">FHIR Client</span>
+      </div>
+      <div class="col-sm-2 text-center" style="font-size: 18px;">
+        <code>GET</code> &rarr;
+      </div>
+      <div class="col-sm-5 text-center">
+        <strong>未滿兩歲兒童育兒津貼資料提供端</strong><br/>
+        <span class="label label-success">FHIR API</span>
+      </div>
+    </div>
+    <hr style="margin: 12px 0;"/>
+    <p class="text-center" style="margin-bottom: 0;">查得的育兒津貼資格資料，依本 IG 定義的 Resources 與 Profiles 表達。</p>
+  </div>
+</div>
+</div>
+
 
 ### 如何閱讀這個實作指引(IG)
 <div  style="padding-left: 10px;"> 

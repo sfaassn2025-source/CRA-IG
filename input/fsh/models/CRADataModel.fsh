@@ -9,15 +9,15 @@ Description: """
 * child 1..1 BackboneElement "受補助兒童"
 * child.idCardNumber 1..1 Identifier "受補助人身分證號"
 * child.name 0..1 HumanName "受補助人姓名"
-* child.birthday 0..1 date "受補助人生日"
+* child.birthDate 0..1 date "受補助人生日"
 * child.district 0..1 string "縣市" 
 
 * subsidyApplication 0..1 BackboneElement "育兒津貼申請"
 * subsidyApplication.applicationNumber 0..1 Identifier "申請案號" "申請育兒津貼的案件編號；申請通過後沿用至結案。"
 * subsidyApplication.applicationDate 0..1 date "申請日期"
 * subsidyApplication.applicant 0..2 BackboneElement "申請人" "最多可填寫二位，分別表達申請人1與申請人2。"
-* subsidyApplication.applicant.applicantIdCardNumber 0..1 Identifier "申請人身分證字號"
-* subsidyApplication.applicant.applicantName 0..1 HumanName "申請人姓名"
+* subsidyApplication.applicant.idCardNumber 0..1 Identifier "申請人身分證字號"
+* subsidyApplication.applicant.name 0..1 HumanName "申請人姓名"
 * subsidyApplication.parity 0..1 string "胎次" "申請育兒津貼時填寫的子女胎次；以字串保存來源系統的填報值。"
 
 * subsidyProvision 0..1 BackboneElement "已核定育兒津貼資格"
@@ -35,7 +35,7 @@ Id: CRADataModelToPatient
 Title: "CRA 資料模型至 Patient CRA Profile"
 * child.idCardNumber -> "Patient.identifier[idCardNumber]"
 * child.name -> "Patient.name"
-* child.birthday -> "Patient.birthDate"
+* child.birthDate -> "Patient.birthDate"
 
 Mapping: CRADataModelToAddress
 Source: CRADataModel
@@ -57,8 +57,8 @@ Source: CRADataModel
 Target: "https://sfaa.gov.tw/cra/StructureDefinition/RelatedPerson-cra"
 Id: CRADataModelToRelatedPerson
 Title: "CRA 資料模型至 RelatedPerson CRA Profile"
-* subsidyApplication.applicant.applicantIdCardNumber -> "RelatedPerson.identifier[idCardNumber]"
-* subsidyApplication.applicant.applicantName -> "RelatedPerson.name"
+* subsidyApplication.applicant.idCardNumber -> "RelatedPerson.identifier[idCardNumber]"
+* subsidyApplication.applicant.name -> "RelatedPerson.name"
 * subsidyApplication.applicant -> "Claim.supportingInfo[applicant].valueReference"
 * subsidyApplication.parity -> "Claim.supportingInfo[parity].valueString"
 
