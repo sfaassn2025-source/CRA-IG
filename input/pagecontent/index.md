@@ -59,6 +59,9 @@
     <p class="text-center" style="margin-bottom: 0;">查得的育兒津貼資格資料，依本 IG 定義的 Resources 與 Profiles 表達。</p>
   </div>
 </div>
+
+<div style="justify-content: center;display: flex;"><img class="figure-img img-responsive img-rounded center-block" src="sequence-fhir-api-daycare.png" alt="未滿兩歲兒童育兒津貼與托育服務 FHIR API 循序圖" style="width: 60%; max-width: 560px; height: auto;" /></div>
+<div style="clear:both;"></div>
 </div>
 
 
