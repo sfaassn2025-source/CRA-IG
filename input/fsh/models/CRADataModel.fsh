@@ -12,7 +12,7 @@ Description: """
 * district 0..1 string "縣市"
 
 * subsidyApplication 0..1 BackboneElement "育兒津貼申請"
-* subsidyApplication.applicationNumber 0..1 Identifier "申請案號" "申請育兒津貼的案件編號；申請通過後沿用至結案。"
+* subsidyApplication.applicationNumber 0..1 Identifier "申請案號" "申請育兒津貼的案件編號，申請通過後，持續符合資格直到年滿２歲之個案，會沿用同一個編號一直到結案。若曾經核停案件並重新申請者，則使用新申請案號直到結案。"
 * subsidyApplication.applicationDate 0..1 date "申請日期"
 * subsidyApplication.applicant1 0..1 BackboneElement "申請人1"
 * subsidyApplication.applicant1.idCardNumber 0..1 Identifier "申請人身分證字號"
@@ -41,7 +41,7 @@ Title: "CRA 資料模型至 Patient CRA Profile"
 
 Mapping: CRADataModelToAddress
 Source: CRADataModel
-Target: "https://sfaa.gov.tw/base/StructureDefinition/Address-twss-base"
+Target: "https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition/Address-twss-base"
 Id: CRADataModelToAddress
 Title: "CRA 邏輯模型對應至 TWSS Base Address Profile"
 * district -> "Address.district"

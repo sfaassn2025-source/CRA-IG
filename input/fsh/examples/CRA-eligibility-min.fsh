@@ -12,7 +12,7 @@ Usage: #example
   </blockquote>
   <p><b>姓名</b>：王小明（usual）</p>
   <p><b>出生日期</b>：2025-01-15</p>
-  <p><b>戶籍縣市</b>：臺北市 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-county-city-code.html">TWSS-縣市行政區域代碼</a>#6300000000）</span></p>
+  <p><b>戶籍縣市</b>：臺北市 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-county-city-code.html">TWSS-縣市行政區域代碼</a>#6300000000）</span></p>
 </div>
 """
 
@@ -110,7 +110,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/base/StructureDefinition/Organization-twss-base|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition/Organization-twss-base|0.0.1"
 * identifier[organizationCode].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[organizationCode].type.coding.code = #PRN
 * identifier[organizationCode].system = "https://example.org/cra/organization-code"
@@ -154,14 +154,14 @@ Usage: #example
   <h3><b>育兒津貼申請範例</b></h3>
   <p><b>申請案號</b>：CRA-115-000001（系統：<code>https://example.org/cra/application-number</code>）</p>
   <p><b>申請狀態</b>：啟用中 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-claim-status.html">Claim Status</a>#active）</span></p>
-  <p><b>申請類型</b>：社會福利補助申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-claim-type.html">TWSS 補助申請類型</a>#social-welfare-subsidy）</span></p>
+  <p><b>申請類型</b>：社會福利補助申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-claim-type.html">TWSS 補助申請類型</a>#social-welfare-subsidy）</span></p>
   <p><b>用途</b>：申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-claim-use.html">Claim Use</a>#claim）</span>；<b>優先順序</b>：一般；<b>建立日期</b>：2026-10-15</p>
   <p><b>個案</b>：<a href="Patient-cra-pat-min.html">Patient/cra-pat-min</a></p>
   <p><b>給付單位／服務提供者</b>：<a href="Organization-cra-insurer-min.html">Organization/cra-insurer-min</a></p>
   <p><b>申請人</b>：<a href="RelatedPerson-cra-related-person-min.html">RelatedPerson/cra-related-person-min</a>、<a href="RelatedPerson-cra-related-person-2-min.html">RelatedPerson/cra-related-person-2-min</a></p>
   <p><b>胎次</b>：2</p>
   <p><b>補助資格</b>：<a href="Coverage-cra-coverage-min.html">Coverage/cra-coverage-min</a></p>
-  <p><b>申請補助別</b>：未滿2歲兒童育兒津貼資訊系統 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-subsidy-service-type.html">TWSS 申請補助別</a>#CRA）</span></p>
+  <p><b>申請補助別</b>：未滿2歲兒童育兒津貼資訊系統 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-subsidy-service-type.html">TWSS 申請補助別</a>#CRA）</span></p>
 </div>
 """
 
@@ -169,7 +169,7 @@ Usage: #example
 * identifier[0].system = "https://example.org/cra/application-number"
 * identifier[0].value = "CRA-115-000001"
 * status = #active
-* type = https://sfaa.gov.tw/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
+* type = https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
 * use = #claim
 * patient = Reference(cra-pat-min)
 * created = "2026-10-15"
@@ -201,21 +201,21 @@ Usage: #example
 <div xmlns="http://www.w3.org/1999/xhtml">
   <h3><b>育兒津貼審核結果範例</b></h3>
   <p><b>回覆狀態</b>：啟用中 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-fm-status.html">Financial Resource Status Codes</a>#active）</span>；<b>用途</b>：申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-claim-use.html">Claim Use</a>#claim）</span>；<b>處理結果</b>：處理完成 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://hl7.org/fhir/R4/codesystem-claim-outcome.html">Claim Processing Codes</a>#complete）</span></p>
-  <p><b>補助申請類型</b>：社會福利補助申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-claim-type.html">TWSS 補助申請類型</a>#social-welfare-subsidy）</span></p>
+  <p><b>補助申請類型</b>：社會福利補助申請 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-claim-type.html">TWSS 補助申請類型</a>#social-welfare-subsidy）</span></p>
   <p><b>個案</b>：<a href="Patient-cra-pat-min.html">Patient/cra-pat-min</a></p>
   <p><b>給付單位／申請處理者</b>：<a href="Organization-cra-insurer-min.html">Organization/cra-insurer-min</a></p>
   <p><b>原申請案</b>：<a href="Claim-cra-claim-min.html">Claim/cra-claim-min</a></p>
   <p><b>建立日期</b>：2026-10-16；<b>核定說明</b>：核定通過</p>
   <p><b>補助期間</b>：2026-11 至 2027-01；<b>停發起始日期</b>：2027-02</p>
   <p><b>核定金額類別</b>：Benefit Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="http://terminology.hl7.org/CodeSystem/adjudication">Adjudication</a>#benefit）</span></p>
-  <p><b>審核決定</b>：通過 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://build.fhir.org/ig/sfaassn2025-source/base/CodeSystem-twss-subsidy-approval-decision.html">TWSS 補助審核決定</a>#approved）</span>；<b>核定金額</b>：5,000 TWD</p>
+  <p><b>審核決定</b>：通過 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki">（ <a href="https://twssbase.sfaa.gov.tw/ig/base/CodeSystem-twss-subsidy-approval-decision.html">TWSS 補助審核決定</a>#approved）</span>；<b>核定金額</b>：5,000 TWD</p>
   <p><b>補助資格</b>：<a href="Coverage-cra-coverage-min.html">Coverage/cra-coverage-min</a></p>
 </div>
 """
 
 * meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/ClaimResponse-cra|0.0.1"
 * status = #active
-* type = https://sfaa.gov.tw/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
+* type = https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
 * use = #claim
 * patient = Reference(cra-pat-min)
 * created = "2026-10-16"

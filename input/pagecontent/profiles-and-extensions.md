@@ -14,7 +14,7 @@
 - [育兒津貼資格-Coverage CRA](StructureDefinition-Coverage-cra.html)
 
 #### Organization
-- [機構資料-Organization TWSS Base](https://build.fhir.org/ig/sfaassn2025-source/base/StructureDefinition-Organization-twss-base.html)
+- [機構資料-Organization TWSS Base](https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition-Organization-twss-base.html)
 
 #### Patient
 - [個案資訊-Patient CRA](StructureDefinition-Patient-cra.html)
@@ -26,4 +26,4 @@
 - [核停年月](StructureDefinition-cra-suspension-approval-year-month.html)
 
 ### TWSS Base IG Extension
-- [補助期間](https://build.fhir.org/ig/sfaassn2025-source/base/StructureDefinition-twss-claim-subsidy-period.html)
+- [補助期間](https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition-twss-claim-subsidy-period.html)

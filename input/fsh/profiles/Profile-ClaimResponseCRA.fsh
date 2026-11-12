@@ -8,7 +8,7 @@ Description: "此 Profile 繼承補助審核或核付結果-ClaimResponse TWSS B
 * request only Reference(ClaimCRA)
 * use = #claim
 * use ^short = "申請用途；固定為正式補助申請。"
-* type = https://sfaa.gov.tw/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
+* type = https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
 * type ^short = "補助申請類型；固定為社會福利補助申請，對應原申請的 Claim.type。"
 * insurance.coverage only Reference(CoverageCRA)
 * insurer 1..1

@@ -27,7 +27,7 @@ publisher:
 dependencies:
   tw.gov.mohw.twss.base:
     id: TWSSBase
-    uri: https://sfaa.gov.tw/base/ImplementationGuide/tw.gov.mohw.twss.base
+    uri: https://twssbase.sfaa.gov.tw/ig/base/ImplementationGuide/tw.gov.mohw.twss.base
     version: current
   tw.gov.mohw.twcore:
     id: TWCore

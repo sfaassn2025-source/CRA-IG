@@ -7,7 +7,7 @@ Description: "此 Profile 繼承補助申請或核付明細-Claim TWSS Base Prof
 * patient only Reference(PatientCRA)
 * use = #claim
 * use ^short = "申請用途；固定為正式補助申請。"
-* type = https://sfaa.gov.tw/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
+* type = https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
 * type ^short = "補助申請類型；固定為社會福利補助申請，具體補助項目另見 item.productOrService。"
 * insurance.coverage only Reference(CoverageCRA)
 * insurer 1..1
@@ -28,7 +28,7 @@ Description: "此 Profile 繼承補助申請或核付明細-Claim TWSS Base Prof
 * supportingInfo[applicant] ^short = "申請人"
 * supportingInfo[applicant] ^definition = "育兒津貼申請人；最多可填寫二位，分別表達申請人1與申請人2。"
 * supportingInfo contains parity 0..1 MS
-* supportingInfo[parity].category.coding.system = "https://sfaa.gov.tw/base/CodeSystem/twss-claim-supporting-info-type"
+* supportingInfo[parity].category.coding.system = "https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-supporting-info-type"
 * supportingInfo[parity].category.coding.code = #parity
 * supportingInfo[parity].category.coding.display = "胎次"
 * supportingInfo[parity].value[x] only string
