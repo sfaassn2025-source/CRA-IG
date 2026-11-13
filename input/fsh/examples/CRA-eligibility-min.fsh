@@ -16,7 +16,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/Patient-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/Patient-cra|0.1.0"
 * identifier[idCardNumber].use = #official
 * identifier[idCardNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[idCardNumber].type.coding.code = #NNxxx
@@ -46,7 +46,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/RelatedPerson-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/RelatedPerson-cra|0.1.0"
 * identifier[idCardNumber].use = #official
 * identifier[idCardNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[idCardNumber].type.coding.code = #NNxxx
@@ -80,7 +80,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/RelatedPerson-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/RelatedPerson-cra|0.1.0"
 * identifier[idCardNumber].use = #official
 * identifier[idCardNumber].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[idCardNumber].type.coding.code = #NNxxx
@@ -110,7 +110,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition/Organization-twss-base|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/base/StructureDefinition/Organization-twss-base"
 * identifier[organizationCode].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[organizationCode].type.coding.code = #PRN
 * identifier[organizationCode].system = "https://example.org/cra/organization-code"
@@ -135,7 +135,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/Coverage-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/Coverage-cra|0.1.0"
 * status = #active
 * type.text = "未滿兩歲兒童育兒津貼"
 * beneficiary = Reference(cra-pat-min)
@@ -165,7 +165,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/Claim-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/Claim-cra|0.1.0"
 * identifier[0].system = "https://example.org/cra/application-number"
 * identifier[0].value = "CRA-115-000001"
 * status = #active
@@ -213,7 +213,7 @@ Usage: #example
 </div>
 """
 
-* meta.profile[+] = "https://sfaa.gov.tw/cra/StructureDefinition/ClaimResponse-cra|0.0.1"
+* meta.profile[+] = "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/ClaimResponse-cra|0.1.0"
 * status = #active
 * type = https://twssbase.sfaa.gov.tw/ig/base/CodeSystem/twss-claim-type#social-welfare-subsidy "社會福利補助申請"
 * use = #claim

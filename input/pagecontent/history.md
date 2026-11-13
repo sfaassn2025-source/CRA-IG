@@ -16,7 +16,7 @@ The following versions of the Child-Raising Allowance For Children Under The Age
     </tr>
     <tr>
       <td><a href="index.html">2026-10-23</a></td>
-      <td>0.0.1</td>
+      <td>0.1.0</td>
       <td><a href="https://hl7.org/fhir/R4/">4.0.1</a></td>
       <td>Initial draft of the Child-Raising Allowance For Children Under The Age Of 2 IG.</td>
       <td>

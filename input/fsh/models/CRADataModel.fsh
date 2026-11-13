@@ -32,7 +32,7 @@ Description: """
 
 Mapping: CRADataModelToPatient
 Source: CRADataModel
-Target: "https://sfaa.gov.tw/cra/StructureDefinition/Patient-cra"
+Target: "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/Patient-cra"
 Id: CRADataModelToPatient
 Title: "CRA 資料模型至 Patient CRA Profile"
 * idCardNumber -> "Patient.identifier[idCardNumber]"
@@ -48,7 +48,7 @@ Title: "CRA 邏輯模型對應至 TWSS Base Address Profile"
 
 Mapping: CRADataModelToClaim
 Source: CRADataModel
-Target: "https://sfaa.gov.tw/cra/StructureDefinition/Claim-cra"
+Target: "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/Claim-cra"
 Id: CRADataModelToClaim
 Title: "CRA 資料模型至 Claim CRA Profile"
 * subsidyApplication.applicationNumber -> "Claim.identifier"
@@ -59,7 +59,7 @@ Title: "CRA 資料模型至 Claim CRA Profile"
 
 Mapping: CRADataModelToRelatedPerson
 Source: CRADataModel
-Target: "https://sfaa.gov.tw/cra/StructureDefinition/RelatedPerson-cra"
+Target: "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/RelatedPerson-cra"
 Id: CRADataModelToRelatedPerson
 Title: "CRA 資料模型至 RelatedPerson CRA Profile"
 * subsidyApplication.applicant1.idCardNumber -> "RelatedPerson.identifier[idCardNumber]" "申請人1對應一筆 RelatedPerson"
@@ -69,7 +69,7 @@ Title: "CRA 資料模型至 RelatedPerson CRA Profile"
 
 Mapping: CRADataModelToClaimResponse
 Source: CRADataModel
-Target: "https://sfaa.gov.tw/cra/StructureDefinition/ClaimResponse-cra"
+Target: "https://twssbase.sfaa.gov.tw/ig/cra/StructureDefinition/ClaimResponse-cra"
 Id: CRADataModelToClaimResponse
 Title: "CRA 資料模型至 ClaimResponse CRA Profile"
 * subsidyProvision.reviewCheckDate -> "ClaimResponse.created"

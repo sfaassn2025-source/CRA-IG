@@ -1,8 +1,8 @@
 <table class="grid rwd-table" style="background-color:#ffffe6;width: 100%;">
     <tbody>
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://sfaa.gov.tw/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra<button title="" class="btn-copy" data-clipboard-text="https://sfaa.gov.tw/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra" data-original-title="複製URL"></button></span></td>
-      <td><i>Version</i>:<span class="copy-text">0.0.1<button title="" class="btn-copy" data-clipboard-text="https://sfaa.gov.tw/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra|0.0.1" data-original-title="複製含版本資訊的URL"></button></span></td>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://twssbase.sfaa.gov.tw/ig/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra<button title="" class="btn-copy" data-clipboard-text="https://twssbase.sfaa.gov.tw/ig/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra" data-original-title="複製URL"></button></span></td>
+      <td><i>Version</i>:<span class="copy-text">0.1.0<button title="" class="btn-copy" data-clipboard-text="https://twssbase.sfaa.gov.tw/ig/cra/ImplementationGuide/tw.gov.mohw.sfaa.cra|0.1.0" data-original-title="複製含版本資訊的URL"></button></span></td>
     </tr>
     <tr>
       <td colspan="4"><i>NPM package name</i>: tw.gov.mohw.sfaa.cra</td>
