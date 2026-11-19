@@ -6,8 +6,8 @@
 id: tw.gov.mohw.sfaa.cra
 canonical: https://twssbase.sfaa.gov.tw/ig/cra
 name: CRA
-title: 未滿兩歲育兒津貼服務實作指引
-description: 未滿兩歲育兒津貼服務實作指引（Child-Raising Allowance For Children Under The Age Of 2 Base IG, CRA IG）
+title: 未滿兩歲育兒津貼實作指引
+description: 未滿兩歲育兒津貼實作指引（Child-Raising Allowance for Children Under Two Implementation Guide, CRA IG）
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
