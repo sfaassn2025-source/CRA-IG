@@ -1,7 +1,7 @@
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
 
-<p>未滿兩歲育兒津貼實作指引（Child-Raising Allowance For Children Under The Age Of 2 Base IG, CRA IG）採用 HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4.0.1 建置，繼承臺灣社政領域基礎實作指引（TWSS Base IG），進一步定義未滿兩歲兒童育兒津貼與托育服務整合資訊系統交換資料時所使用的 Resources、資料項目、基數及資料型別。</p>
+<p>未滿兩歲育兒津貼實作指引（Child-Raising Allowance for Children Under Two Implementation Guide, CRA IG）採用 HL7<sup>&reg;</sup> FHIR<sup>&reg;</sup> R4.0.1 建置，繼承臺灣社政領域基礎實作指引（TWSS Base IG），進一步定義未滿兩歲兒童育兒津貼與托育服務整合資訊系統交換資料時所使用的 Resources、資料項目、基數及資料型別。</p>
 
 </div>
 
